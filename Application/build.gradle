@@ -1,7 +1,7 @@
 
 buildscript {
     repositories {
-        jcenter()
+        maven { url 'https://dcartifactory.service.dev/artifactory/jcenter'}
     }
 
     dependencies {
@@ -9,10 +9,12 @@ buildscript {
     }
 }
 
+
+
 apply plugin: 'com.android.application'
 
 repositories {
-    jcenter()
+    maven { url 'https://dcartifactory.service.dev/artifactory/jcenter'}
 }
 
 dependencies {
@@ -31,7 +33,7 @@ List<String> dirs = [
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    buildToolsVersion "23.0.0"
 
     defaultConfig {
         minSdkVersion 16
