@@ -14,7 +14,7 @@ buildscript {
 apply plugin: 'com.android.application'
 
 repositories {
-    maven { url 'https://dcartifactory.service.dev/artifactory/jcenter'}
+    mavenLocal()
 }
 
 dependencies {
